@@ -1,0 +1,6 @@
+[SerializeField]
+[Header("text")]
+[Range()]
+[Tooltip("text")]
+[RequireComponent(typeof(Tilemap))]
+[TextArea(minLines: 0, maxLines: 5)]

@@ -19,7 +19,7 @@ public class gameController : MonoBehaviour
     timeScale=1;
   }
 
-  void Update()
+  void Update()//atom test
   {
     //<Time scale managment>
     Time.timeScale = timeScale;

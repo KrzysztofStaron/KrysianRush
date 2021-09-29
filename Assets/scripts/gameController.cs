@@ -11,6 +11,7 @@ public class gameController : MonoBehaviour
   [SerializeField]private float limit;
   [Header("Other:")]
   [SerializeField]private float speed = 5;
+  public bool isGameStarted;
   [Header("Debuging:")]
   [SerializeField]private float timeScale=1;
 

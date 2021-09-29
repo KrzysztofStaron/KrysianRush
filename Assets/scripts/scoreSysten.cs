@@ -5,6 +5,7 @@ public class scoreSysten : MonoBehaviour
 {
     [SerializeField]private TMP_Text scoreText;
     [SerializeField]private Transform camPos;
+    [SerializeField]private gameController gc;
     public float score=0;
 
     void Start(){
@@ -13,7 +14,9 @@ public class scoreSysten : MonoBehaviour
 
     void UpdateScore()
     {
-      score = Mathf.Round (camPos.position.x / 2);
-      scoreText.text="Score: " + score;
+      if (gc.isGameStarted) {
+        score = Mathf.Round (camPos.position.x / 2);
+        scoreText.text="Score: " + score;
+      }
     }
 }

@@ -9,6 +9,6 @@ public class menuManager : MonoBehaviour
     }
 
     public void Hide(){
-      menu.SetActive(false);
+      menu.SetActive(false);//change
     }
 }
